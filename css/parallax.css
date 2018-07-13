@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+body, html{
+   height:100%;
+   margin:0;
+   font-family: 'Nanum Gothic', Helvetica, sans-serif;
+   font-weight: 400;
+   line-height: 1.8em;
+   color: #666;
+}
+
+.bgimg-1,.bgimg-2,.bgimg-3 {
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    /* core feather */
+    background-attachment: fixed;
+}
+
+.bgimg-1 {
+   background-image: url('../img/table.jpeg');
+   min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url('../img/fruits.jpeg');
+    min-height: 400px;
+ }
+
+ .bgimg-3 {
+    background-image: url('../img/cook.jpeg');
+    min-height: 400px;
+ }
+
+ .section{
+     text-align: center;
+     padding: 50px 80px;
+ }
+
+ .section-1 {
+     background-color: #f4f4f4; 
+     color: #666;
+}
+ .section-2 {
+    background-color: #282e34;
+    color: #ddd;
+ }
+
+ .bgtext {
+    position: absolute;
+     top: 50%;
+     text-align: center;
+     width: 100%;
+     font-size: 27px;
+     text-transform: uppercase;
+     letter-spacing: 8px;
+ }
+
+ .bgtext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+ }
+
+ .bgtext .tran {
+     background-color: transparent;
+ }
+
+
+ /* disable the parallax effect on mobile device*/
+
+ @media (max-width:568px) {
+    .bgimg-1,.bgimg-2,.bgimg-3 {
+        background-attachment: scroll;
+    }
+ }
